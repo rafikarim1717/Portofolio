@@ -6,18 +6,17 @@
 .aside .logo a::after{
 	border-bottom: 4px solid #008000;
 	border-right: 4px solid #008000;
-
-
 }
-
-
 .contact .contact-info-item .icon .fa,
 .lightbox .lightbox-controls .prev-item .fa,
 .lightbox .lightbox-controls .next-item .fa,
 .project .project-item .project-info .icon .fa,
+body.dark .project .project-filter button.active,
 .project .project-filter button.active,
 .service .service-item .service-item-inner .icon .fa,
 .about .about-content .about-text h3 span,
+body.dark .aside .nav li a:hover, 
+body.dark.aside .nav li a.active,
 .aside .nav li a:hover,
 .aside .nav li a.active{
 	color: #008000;
