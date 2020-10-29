@@ -7,6 +7,14 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/skins/pink.css">
     <script src="https://kit.fontawesome.com/acfe2cc055.js" crossorigin="anonymous"></script>
+
+    <!--Style Switcher Demo -->
+     <link rel="stylesheet" class="alternate-style" title="pink" type="text/css" href="css/skins/pink.css" disabled>
+     <link rel="stylesheet" class="alternate-style" title="blue" type="text/css" href="css/skins/blue.css" disabled>
+     <link rel="stylesheet" class="alternate-style" title="green" type="text/css" href="css/skins/green.css" disabled>
+     <link rel="stylesheet" class="alternate-style" title="violet" type="text/css" href="css/skins/violet.css" disabled>
+ 
+     <link rel="stylesheet" type="text/css" href="css/styleSwitcher.css">
 </head>
 <body>
 <!-- Main Container -->
@@ -518,10 +526,29 @@
 </div>
 
 
-<!-- Lightbox End >
+<!-- Lightbox End -->
 
-<1-- Template js -->
+<!-- Live Style Switcher -->
+<div class="style-switcher">
+	<div class="toggle-style-switcher">
+		<i class="fa fa-cog fa-spin"></i>
+	</div>	
+	<h5>Style Switcher</h5>
+	<ul>
+		<li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839" onclick="setActiveStyle('pink')"></a></li>
+
+		<li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3" onclick="setActiveStyle('blue')"></a></li>
+
+		<li><a href="javascript:void(0);" title="green" style="background-color: #008000" onclick="setActiveStyle('green')"></a></li>
+
+		<li><a href="javascript:void(0);" title="violet" style="background-color: #8A2BE2" onclick="setActiveStyle('violet')"></a></li>
+	</ul>
+</div>	
+
+<!-- Live Style Switcher End -->
+
+<!-- Template js -->
 <script src="js/script.js"></script>
-
+<script src="js/styleSwitcher.js"></script>
 </body>
 </html>
