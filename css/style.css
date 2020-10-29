@@ -1136,6 +1136,7 @@ body.dark .about .about-content .about-text p,
 body.dark .home .intro p{
 color: #e9e9e9;
 }
+body.dark .project .project-item-inner,
 body.dark .service .service-item .service-item-inner,
 body.dark .about .about-content .timeline,
 body.dark .about-content .personal-info .info-item p,
