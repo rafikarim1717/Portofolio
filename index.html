@@ -7,16 +7,23 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/skins/pink.css">
     <script src="https://kit.fontawesome.com/acfe2cc055.js" crossorigin="anonymous"></script>
-
     <!--Style Switcher Demo -->
      <link rel="stylesheet" class="alternate-style" title="pink" type="text/css" href="css/skins/pink.css" disabled>
      <link rel="stylesheet" class="alternate-style" title="blue" type="text/css" href="css/skins/blue.css" disabled>
      <link rel="stylesheet" class="alternate-style" title="green" type="text/css" href="css/skins/green.css" disabled>
-     <link rel="stylesheet" class="alternate-style" title="violet" type="text/css" href="css/skins/violet.css" disabled>
- 
+     <link rel="stylesheet" class="alternate-style" title="violet" type="text/css" href="css/skins/violet.css" disabled> 
      <link rel="stylesheet" type="text/css" href="css/styleSwitcher.css">
 </head>
 <body>
+
+<!-- Preloader -->
+   <div class="preloader">
+   	<div class="loader">
+   		
+   	</div>
+   </div>
+<!-- Preloader End-->
+
 <!-- Main Container -->
 <div class="main-container">
 	<!-- Aside -->
@@ -31,11 +38,11 @@
      </div>
      <!--Nav-->
      <ul class="nav">
-     	<li><a href="#" class="active"><i class="fa fa-home"></i> Home </a></li>
-     	<li><a href="#"><i class="fa fa-user"></i> About </a></li>
-     	<li><a href="#"><i class="fa fa-list"></i> Services </a></li>
-     	<li><a href="#"><i class="fa fa-briefcase"></i> Project</a></li>
-     	<li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+     	<li><a href="#home" class="active"><i class="fa fa-home"></i> Home </a></li>
+     	<li><a href="#about"><i class="fa fa-user"></i> About </a></li>
+     	<li><a href="#services"><i class="fa fa-list"></i> Services </a></li>
+     	<li><a href="#project"><i class="fa fa-briefcase"></i> Project</a></li>
+     	<li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
      </ul>
      <!-- CopyRight -->
      <div class="copyright-text">
@@ -46,7 +53,7 @@
    <!-- Main Content -->
  <div class="main-content">
    <!-- Home Section -->
- 	<section class="home section">
+ 	<section class="home section active" id="home">
       <div class="container">
       	<div class="intro">
       		<img src="image/RK.jpg" alt="profile" class="shadow-dark">
@@ -64,7 +71,7 @@
  	<!--Home Section End -->
 
    <!-- About Section -->
-   <section class="about section ">
+   <section class="about section " id="about">
    	<div class="container">
    		<div class="row">
    			<div class="section-title padd-15">
@@ -114,7 +121,7 @@
    					 <div class="row">
    					 	<div class="buttons padd-15"> 
    					 		<a href="#" class="btn">Download CV</a>
-   					 	    <a href="#" class="btn">Hire Me</a>
+   					 	    <a href="#contact" data-section-index ="1" class="btn hire-me">Hire Me</a>
    					 	</div>
    					 </div>	
                    </div>
@@ -255,7 +262,7 @@
    <!--About Section End -->
 
    <!-- Service Section-->
-    <section class="service section ">
+    <section class="service section" id="services">
    	<div class="container">
    		<div class="row">
    			<div class="section-title padd-15">
@@ -323,7 +330,7 @@
    <!-- Service Section End-->
 
    <!-- Project Section -->
-    <section class="project section ">
+    <section class="project section " id="project">
    	<div class="container">
    		<div class="row">
    			<div class="section-title padd-15">
@@ -416,7 +423,7 @@
 
     <!-- Contact section -->
 
-    <section class="contact section">
+    <section class="contact section" id="contact">
    	<div class="container">
    		<div class="row">
    			<div class="section-title padd-15">
@@ -453,7 +460,7 @@
            			<!-- Contact-item -->
            			<div class="form-item col-6 padd-15">
            				<div class="form-group">
-           					<input type="text" class="form-control" placeholder="Name : ">
+           					<input type="text" class="form-control" placeholder="Name*">
            				</div>	
            			</div>
                    <!--Contact-item-end -->
