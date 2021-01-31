@@ -423,12 +423,13 @@ transition: all 0.3s ease;
 	margin: 0;
 	line-height: 22px;
 	color: #504e70;
-	letter-spacing :1.1px
+	letter-spacing :0.9px;
 
 }
 
 .home .intro .social-links{
-	margin-top: 25px;
+	margin-top: 21px;
+	margin-left:-3px;
 
 }
 
